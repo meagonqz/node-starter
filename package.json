@@ -3,14 +3,15 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
-  "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.6.1",
-    "nodemon": "^1.17.3"
-  },
+  "devDependencies": {},
   "scripts": {
     "babel": "./node_modules/.bin/babel-node --presets env",
     "watch": "./node_modules/.bin/nodemon --exec ./node_modules/.bin/babel-node --presets env script.js",
     "script": "./node_modules/.bin/babel-node --presets env script.js"
+  },
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "nodemon": "^1.17.3"
   }
 }

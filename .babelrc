@@ -1,20 +1,4 @@
 {
-  "presets": [
-    [ "env", {
-      "targets": { "node": "8.11" }
-      }
-    ]
-  ],
-  "env": {
-    "test": {
-      "plugins": [
-        ["istanbul", {
-          "exclude": [
-            "**/*.test.js",
-            "**/*.test.jsx"
-          ]
-        }]
-      ]
-    }
-  }
+  "presets":
+    [ "env" ]
 }

@@ -1,6 +1,10 @@
 import "babel-polyfill";
 import fetch from "node-fetch";
 
-const test = fetch("https://jsonplaceholder.typicode.com/posts/1")
-  .then(response => response.json())
-  .then(json => console.log(json));
+async function getData() {
+  const test = await fetch("https://jsonplaceholder.typicode.com/posts/1");
+  const testJson = await test.json();
+  console.log(testJson);
+  return testJson;
+}
+getData();
